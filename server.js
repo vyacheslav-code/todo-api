@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 
 app.post('/todo', (req, res) => {
     const todo = req.body
-    console.log(req)
+
     if (!todo.text) {
         res.status(404).send('text is required')
     }
